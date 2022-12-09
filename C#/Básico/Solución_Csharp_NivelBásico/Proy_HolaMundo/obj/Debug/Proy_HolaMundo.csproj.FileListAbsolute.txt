@@ -1,0 +1,8 @@
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Proy_HolaMundo\bin\Debug\Proy_HolaMundo.exe.config
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Proy_HolaMundo\bin\Debug\Proy_HolaMundo.exe
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Proy_HolaMundo\bin\Debug\Proy_HolaMundo.pdb
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Proy_HolaMundo\obj\Debug\Proy_HolaMundo.csproj.AssemblyReference.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Proy_HolaMundo\obj\Debug\Proy_HolaMundo.csproj.SuggestedBindingRedirects.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Proy_HolaMundo\obj\Debug\Proy_HolaMundo.csproj.CoreCompileInputs.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Proy_HolaMundo\obj\Debug\Proy_HolaMundo.exe
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Proy_HolaMundo\obj\Debug\Proy_HolaMundo.pdb

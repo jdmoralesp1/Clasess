@@ -1,0 +1,11 @@
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\obj\Debug\Presentacion.MiPrimerFormulario.resources
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\juan.morales1\Documents\Clases\C#\Intermedio\Sol_Aprendizaje\Presentacion\obj\Debug\Presentacion.pdb

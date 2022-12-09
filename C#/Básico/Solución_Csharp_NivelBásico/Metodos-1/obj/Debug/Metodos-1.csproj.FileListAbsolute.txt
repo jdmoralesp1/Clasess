@@ -1,0 +1,8 @@
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Metodos-1\bin\Debug\Metodos-1.exe.config
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Metodos-1\bin\Debug\Metodos-1.exe
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Metodos-1\bin\Debug\Metodos-1.pdb
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Metodos-1\obj\Debug\Metodos-1.csproj.AssemblyReference.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Metodos-1\obj\Debug\Metodos-1.csproj.SuggestedBindingRedirects.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Metodos-1\obj\Debug\Metodos-1.csproj.CoreCompileInputs.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Metodos-1\obj\Debug\Metodos-1.exe
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Metodos-1\obj\Debug\Metodos-1.pdb

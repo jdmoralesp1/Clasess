@@ -1,0 +1,7 @@
+- Crear nueva migration
+
+dotnet ef migrations add InitialData
+
+- Hacer update de esa migration a la BD
+
+dotnet ef database update

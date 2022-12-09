@@ -1,0 +1,8 @@
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Switch\bin\Debug\Switch.exe.config
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Switch\bin\Debug\Switch.exe
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Switch\bin\Debug\Switch.pdb
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Switch\obj\Debug\Switch.csproj.AssemblyReference.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Switch\obj\Debug\Switch.csproj.SuggestedBindingRedirects.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Switch\obj\Debug\Switch.csproj.CoreCompileInputs.cache
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Switch\obj\Debug\Switch.exe
+C:\Users\juan.morales1\Documents\Clases\C#\Básico\Solución_Csharp_NivelBásico\Switch\obj\Debug\Switch.pdb

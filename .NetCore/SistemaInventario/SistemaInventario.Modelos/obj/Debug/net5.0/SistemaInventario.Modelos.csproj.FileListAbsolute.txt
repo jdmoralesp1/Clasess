@@ -1,0 +1,12 @@
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net5.0\SistemaInventario.Modelos.deps.json
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net5.0\SistemaInventario.Modelos.dll
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net5.0\SistemaInventario.Modelos.pdb
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\SistemaInventario.Modelos.csproj.AssemblyReference.cache
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\SistemaInventario.Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\SistemaInventario.Modelos.AssemblyInfoInputs.cache
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\SistemaInventario.Modelos.AssemblyInfo.cs
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\SistemaInventario.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\SistemaInventario.Modelos.dll
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\refint\SistemaInventario.Modelos.dll
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\SistemaInventario.Modelos.pdb
+C:\Users\juan.morales1\Documents\Clases\.NetCore\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net5.0\ref\SistemaInventario.Modelos.dll
