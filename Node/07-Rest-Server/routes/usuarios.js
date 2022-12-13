@@ -24,8 +24,6 @@ router.put('/:id', [
     validarCampos
 ], usuariosPut);
 
-router.patch('/', usuariosPatch);
-
 //primero se envia la ruta, luego un middleware que revisa todo antes de ejecutar el metodo y luego si el controlador del metodo
 router.post('/', [
     check('nombre', 'El nombre es obligatorio').not().isEmpty(),
@@ -37,7 +35,13 @@ router.post('/', [
     validarCampos
 ], usuariosPost);
 
-router.delete('/', usuariosDelete);
+router.delete('/:id', [
+    check('id', 'No es un Id valido').isMongoId(),
+    check('id').custom( existeUsuarioporId ),
+    validarCampos
+], usuariosDelete);
+
+router.patch('/', usuariosPatch);
 
 
 

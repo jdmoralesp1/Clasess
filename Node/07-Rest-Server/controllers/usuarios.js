@@ -7,11 +7,27 @@ const usuariosGet = async(req = request, res = response) => {
     //Desestructuro lo que quiero recibir por medio del query de la petición
     // const { q, nombre = 'No Name', apikey, page=1, limit } = req.query;
     const { limite = 5 , desde = 0} = req.query;
-    const usuarios = await Usuario.find()
-    .skip(Number(desde))
-    .limit(Number(limite));
+    const query = { estado: true };
+    /*const usuarios = await Usuario.find( query )
+        .skip(Number(desde))
+        .limit(Number(limite));
+
+    const total = await Usuario.countDocuments( query );*/
+
+    // Dejo de usar la parte que esta comentada y las meto en esta promesa para que adentro ejecute
+    // ambas consultas al tiempo y espere a que ambas acaben antes de continuar
+    // con esto se logra optimizar el tiempo de respuesta
+    // el Promise.all me crea un arreglo, desestructuro el mismo y total corresponde a la primer promes
+    // del arreglo y usuarios a la segunda
+    const [ total, usuarios ] = await Promise.all([
+        Usuario.countDocuments( query ),
+        Usuario.find( query )
+            .skip(Number(desde))
+            .limit(Number(limite))
+    ])
 
     res.json({
+        total,
         usuarios
     })
 }
@@ -58,9 +74,17 @@ const usuariosPatch = (req, res) => {
     })
 }
 
-const usuariosDelete = (req, res) => {
+const usuariosDelete = async (req, res) => {
+
+    const {id} = req.params;
+
+    //Fisicamente lo borramos
+    //const usuario = await Usuario.findByIdAndDelete(id);
+
+    const usuario = await Usuario.findByIdAndUpdate(id, {estado: false});
+
     res.json({
-        msg: 'delete API - controlador'
+        usuario
     })
 }
 
