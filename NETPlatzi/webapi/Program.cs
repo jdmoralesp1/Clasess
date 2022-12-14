@@ -14,6 +14,7 @@ builder.Services.AddScoped <IHelloWorldService>(p=> new HelloWorldSerice());
 
 var app = builder.Build();
 
+//Swagger es muy util para sacar la documentación de la API, pero solo se usa en desarrollo para no dejarla expuesta a hackers o gente maliciosa
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

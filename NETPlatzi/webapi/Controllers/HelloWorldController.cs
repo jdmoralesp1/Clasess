@@ -8,16 +8,20 @@ namespace webapi.Controllers;
 
 public class HelloWorldController : ControllerBase
 {
+    private readonly ILogger<HelloWorldController> _logger;
     IHelloWorldService helloWorldService;
 
-	public HelloWorldController(IHelloWorldService helloWorld)
-	{
-		helloWorldService= helloWorld;
-	}
+	public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger)
+    {
+        helloWorldService = helloWorld;
+        _logger = logger;
+    }
 
-	public IActionResult Get()
+    [HttpGet]
+    public IActionResult Get()
 	{
-		return Ok(helloWorldService.GetHelloWorld());
+        _logger.LogInformation("Retornando get de helloworld");
+        return Ok(helloWorldService.GetHelloWorld());
 	}
 }
 

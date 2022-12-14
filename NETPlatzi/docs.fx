@@ -30,7 +30,7 @@ If(IsBlank(documentacion) || IsBlank(TextInput2.Text),
 
 
 
-        CrearCasoLD.Run(documentacion,Tipo,documentacion,TextInput2.Text,UsuarioCredencial,componenteservicio,Sintoma,servicionegocio,"lineaDirecta",UsuarioCredencial,ContraseniaCredencial,Solucion);
+        Set(Creado,CrearCasoLD.Run(documentacion,Tipo,documentacion,TextInput2.Text,UsuarioCredencial,componenteservicio,Sintoma,servicionegocio,"lineaDirecta",UsuarioCredencial,ContraseniaCredencial,Solucion).casocreado);
         Set(cargando,false);
         Notify("Caso creado con exito",NotificationType.Success),
         Set(cargando,false);
