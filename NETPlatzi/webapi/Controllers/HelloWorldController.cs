@@ -11,10 +11,13 @@ public class HelloWorldController : ControllerBase
     private readonly ILogger<HelloWorldController> _logger;
     IHelloWorldService helloWorldService;
 
-	public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger)
+    TareasContext dbcontext;
+
+	public HelloWorldController(IHelloWorldService helloWorld, ILogger<HelloWorldController> logger, TareasContext db)
     {
         helloWorldService = helloWorld;
         _logger = logger;
+        dbcontext = db;
     }
 
     [HttpGet]
@@ -23,5 +26,14 @@ public class HelloWorldController : ControllerBase
         _logger.LogInformation("Retornando get de helloworld");
         return Ok(helloWorldService.GetHelloWorld());
 	}
+
+    [HttpGet]
+    [Route("createdb")]
+    public IActionResult CreateDatabase() 
+    {
+        dbcontext.Database.EnsureCreated();
+
+        return Ok();
+    }
 }
 

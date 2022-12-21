@@ -41,7 +41,7 @@ namespace webapi.Services
             }
         }
 
-        public async Task Delete(Guid id, Tarea tarea)
+        public async Task Delete(Guid id)
         {
             var tareaActual = context.Tareas.Find(id);
 
@@ -58,6 +58,6 @@ namespace webapi.Services
         IEnumerable<Tarea> Get();
         Task Save(Tarea tarea);
         Task Update(Guid id, Tarea tarea);
-        Task Delete(Guid id, Tarea tarea);
+        Task Delete(Guid id);
     }
 }
