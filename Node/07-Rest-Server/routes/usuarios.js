@@ -4,6 +4,8 @@ const { esRolValido,
         emailExiste, 
         existeUsuarioporId } = require('../helpers/db-validators');
 const { validarCampos } = require('../middlewares/validar-campos');
+const { validarJWT } = require('../middlewares/validar-jwt');
+
 const { 
     usuariosGet ,
     usuariosPut,
@@ -36,6 +38,7 @@ router.post('/', [
 ], usuariosPost);
 
 router.delete('/:id', [
+    validarJWT,
     check('id', 'No es un Id valido').isMongoId(),
     check('id').custom( existeUsuarioporId ),
     validarCampos
