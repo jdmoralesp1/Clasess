@@ -1,85 +1,61 @@
-import React, {useEffect, useState} from "react";
 import "./App.css";
-import ContenidoDinamico from "./ContenidoDinamico";
-import EjemploReloj from "./EjemploReloj";
-import FormularioTexto from "./FormularioTexto";
-import MostrarTexto from "./MostrarTexto";
-import ProyectarContenido from './ProyectarContenido';
-import ProyectarContenido2 from './ProyectarContenido2';
-import EjemploUseEffect from './EjemploUseEffect';
-
+import ListadoPeliculas from "./peliculas/ListadoPeliculas";
+import PeliculaIndividual from "./peliculas/Peliculaindividual";
+import { landingPageDTO, pelicula } from "./peliculas/peliculas.model";
+import { useEffect, useState } from "react";
+import Button from "./utils/Button";
 
 function App() {
+  const [peliculas, setPeliculas] = useState<landingPageDTO>({});
 
-  const [texto, setTexto] = useState('Valor por defecto');
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setPeliculas({
+        enCartelera: [
+          {
+            id: 1,
+            titulo: "Spider-Man: Way No Home",
+            poster:
+              "https://img.ecartelera.com/noticias/fotos/70100/70190/1.jpg",
+          },
+          {
+            id: 2,
+            titulo: "Moana",
+            poster:
+              "https://i.pinimg.com/736x/25/f4/46/25f4469d3b2c7315250527a0409fa880--moana--princess-moana.jpg",
+          },
+        ],
+        proximosEstrenos: [
+          {
+            id: 3,
+            titulo: "Soul",
+            poster:
+              "https://i0.wp.com/noescinetodoloquereluce.com/wp-content/uploads/2020/10/soul_7.jpg?resize=743%2C1100&ssl=1",
+          },
+          {
+            id: 4,
+            titulo: "One Piece Red",
+            poster:
+              "https://cdn.beahero.gg/2022/09/ONEPIECE-RED-ONESHEET-LATAM-FECHA.jpg",
+          },
+        ],
+      });
+    }, 500);
 
-  const [checked, setChecked] = useState(true);
-
-  const imagenURL = "https://nextsoftware.io/files/images/logos/main/reactjs-logo.png";
-
-  const manejarClick = () => console.log('click');
-
-  const manejarKeyUp = (textoInput: string) => {
-    console.log(textoInput);
-    setTexto(textoInput);
-  }
-
-  const parteIntermedia = <EjemploReloj />
-
-  const estilo = {
-    backgroundColor: 'red', width: '50px', height: '50px', marginLeft: '1rem'
-  }
-
-  const parteInferior = <div style={estilo}></div>
-
-  const calificaciones = [
-    {nombre: 'Juan', calificacion: 75},
-    {nombre: 'Claudia', calificacion: 85},
-    {nombre: 'Roberto', calificacion: 95},
-  ];
+    return () => clearTimeout(timerId);
+  });
 
   return (
     <>
-      <h1 className="rojo">Hola mundo</h1>
+      <div className="container">
 
-      <div>
-        <input type="checkbox" 
-        onChange={(e) => setChecked(e.currentTarget.checked)}
-        checked={checked} />mostrar componente useEffect
-      </div>
+        <Button>Mi componente botón</Button>
 
-      {checked ? <EjemploUseEffect /> : null}
+        <h3>En cartelera</h3>
+        <ListadoPeliculas peliculas={peliculas.enCartelera} />
 
-      {calificaciones.map((cal) => <ContenidoDinamico key={cal.nombre} {...cal} />)}
-
-      {/* <ProyectarContenido>
-        <>
-          <span>Hola proyectando contenido</span>
-          
-        </>
-      </ProyectarContenido> */}
-
-      <ProyectarContenido2
-        parteSuperior = {<span>Este es un mensaje del componente padre</span>}
-        parteIntermedia = {parteIntermedia}
-        parteInferior = {parteInferior}
-      />
-
-      <button 
-      onMouseEnter={() => console.log('entrando')}
-      onClick={() => console.log('Click desde el boton')}>Clickeame</button>
-      <br />
-      <FormularioTexto manejarKeyUp={(e: string) => manejarKeyUp(e)} />
-      
-      <MostrarTexto texto={texto}/>
-
-      <br />
-      
-      
-      <div>
-        <input type="checkbox" 
-        onChange={(e) => setChecked(e.currentTarget.checked)}
-        checked={checked} />Este es un checkbox
+        <h3>Proximos estrenos</h3>
+        <ListadoPeliculas peliculas={peliculas.proximosEstrenos} />
       </div>
     </>
   );

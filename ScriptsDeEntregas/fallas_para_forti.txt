@@ -1,0 +1,26 @@
+Se intenta encender VPN desde 
+Powershell con:
+- rasdial "Nombre de la conexión VPN"
+- rasclient /phonebook:nombre_del_archivo.pbk : Esta opción no es viable porque los archivos.pbk son archivos de configuración y se exportan desde FortiClient y el programa no da esta opción
+- FortiSSLVPNclient.exe -c "Nombre de la conexión VPN" : Esta opción ya existe actualmente en Belcorp y se necesita que el usuario final agregue usuario y password para poder continuar (Esta opción queda por preguntar si se puede hacer con un superuser que no tenga MFA)
+- Los comandos que permite el .exe de la app (FortiClientconsole.exe) solo dan opciones de actualizar, cuarentena y otras opciones que no son utiles para esta tarea
+- En la documentación oficial (https://docs.fortinet.com/product/forticlient/7.0) no salen comandos ni instrucciones relacionadas de como hacer esto
+- Se intenta con la libreria System.Windows.Forms perteneciente a .Net para usarse dentro de powershell pero no se logra usar la misma aun usando Install.Module, Install-Module, NuGet,Install-Package, Add-Type -AssemblyName o lo que este relacionado a este modulo
+- Se intenta usar el comando tasklist para traer las tareas en ejecución e intentar enviarle un parametro al proceso fortisslvpndaemon.exe que es el principal de FortiClient pero no acepta argumentos
+
+Visual Studio 2022:
+- Se intenta de nuevo con System.Windows.Forms pero no se halla forma de usar el mismo, salen errores que no se encuentra resolución
+
+Python con: 
+- Libreria win32api
+- Libreria pywinauto
+- Libreria pystray
+- Libreria psutil
+* Estas librerias de python fallan en mayor parte debido a que no logran encontrar el proceso de forticlient o el icono que se ubica en la  bandeja del sistema (lugar donde se ven los iconos pequeños)
+
+Node con:
+- Libreria node-windows
+- Libreria robotjs : en esta no se puede hacer mucho porque depende de coordenadas "x" y "y" de la pantalla, las cuales cambiaran de un equipo a otro
+- Libreria edge: es para ejecutar scripts de c# pero tampoco se consigue nada porque no funcionan en Visual Studio
+- Libreria node-macro: es para igualmente intentar hacer clicks sobre la pantalla pero no se logra ejecutar, al parecer es una libreria con otras funciones ajenas a lo buscado
+
